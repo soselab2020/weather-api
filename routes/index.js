@@ -9,11 +9,11 @@ router.get('/weather/:city', function (req, res) {
   let city = req.params.city;
 
   if (city == 'Taipei') {
-    report = { temperature: "+17 °C", wind: "6 km/h", description: "Sunny" };
+    report = { temperature: "+15 °C", wind: "6 km/h", description: "Partly cloudy" };
   } else if (city == 'Keelung') {
-    report = { temperature: "+26 °C", wind: "6 km/h", description: "Partly cloudy" };
+    report = { temperature: "+14 °C", wind: "6 km/h", description: "Rainy" };
   } else if (city == 'Kaohsiung') {
-    report = { temperature: "+24 °C", wind: "6 km/h", description: "Sunny" };
+    report = { temperature: "+22 °C", wind: "6 km/h", description: "Sunny" };
   } else {
     report = { temperature: "+7 °C", wind: "6 km/h", description: "Sunny" };
   }
